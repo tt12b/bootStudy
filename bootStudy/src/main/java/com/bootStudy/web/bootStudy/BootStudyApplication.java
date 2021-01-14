@@ -5,12 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class BootStudyApplication {
-
 	public static void main(String[] args) {
+		System.out.println("######################");
+		System.out.println("#######Boot_Run#######");
+		System.out.println("######################");
 		SpringApplication.run(BootStudyApplication.class, args);
-		// 여웅이친오빠 커밋 & 푸쉬 테스틑 
-		// 201002 진경 커밋 & 푸쉬 테스트
-		
 	}
-
 }

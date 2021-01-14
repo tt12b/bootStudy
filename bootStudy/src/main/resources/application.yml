@@ -1,0 +1,21 @@
+#서버 및 포트
+server:
+  port: 8080
+    
+#로거
+logging:
+  file:
+    path: /Users/SpringBoot/Logs  #해당 위치에 로그 파일 생성
+    max-size: 50MB                #파일 최대 사이즈
+    max-history: 3               #최대 보관 일
+  level:
+    root: info                    #로그레벨 info 이하(INFO,WARN,ERROR) 출력
+                                  #TRACE > DEBUG > INFO > WARN > ERROR
+
+
+#devTools
+spring:
+  devtools:    #livereload:      #enabled: true               
+      #livereload기능을 사용하기 위해선 Chrome, Firefox, Safari용 플러그인을 각각 사용하시는 브라우저에 추가해 주어야 함
+    restart:      enabled: false #자동리스타트 미사용
+      exclude: 
